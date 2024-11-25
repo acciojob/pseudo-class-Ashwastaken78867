@@ -5,21 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Special Text Before and After</title>
   <style>
-    #container {
-      margin: 20px;
-    }
+	  #container {
+  margin: 20px;
+}
 
-    #container::before {
-      content: "Before Element ";
-      color: #f00;
-      font-size: 20px;
-    }
+#container::before {
+  content: "Before Element"; /* Removed space after "Before Element" */
+  color: #f00;
+  font-size: 20px;
+}
 
-    #container::after {
-      content: " After Element";
-      color: #f00;
-      font-size: 20px;
-    }
+#container::after {
+  content: "After Element"; /* Removed space before "After Element" */
+  color: #f00;
+  font-size: 20px;
+}
+     
   </style>
 </head>
 <body>
